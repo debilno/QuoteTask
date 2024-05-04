@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+.header {
+    padding: 40px;
+    min-height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--header-bg);
+    background-image: url("../../img/slider-bg.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center center;
+
+    color: var(--header-text);
+    text-align: center;
+}
+
+.header__title {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.header__title strong {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.header__title em {
+    font-style: normal;
+    color: var(--accent);
+}
+
+.quote-section {
+    background-color: #505062;
+}
+
+.quoteCard {
+    background-color: grey;
+}
+
+.card-container {
+    margin: 24px 24px 24px 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    gap: 10px;
+}
+
+.page {
+    min-height: 90vh;
+    padding: 64px 0;
+}
+
+.wrapper {
+    margin: 0 22vh 0 22vh;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn-next {
+    font-family: "Fjalla One", sans-serif;
+    color: white;
+    background-color: #5c62ec;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px;
+}
+
+.btn-back {
+    font-family: "Fjalla One", sans-serif;
+    margin: 10px;
+    border: 2px solid #5c62ec;
+    padding: 15px;
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.btn-next:hover {
+	background: rgba(0,0,0,0);
+	color: #5c62ec;
+	box-shadow: inset 0 0 0 3px #5c62ec;
+}
+
+.btn-back:hover {
+	background: rgba(0,0,0,0);
+	color: #5c62ec;
+	box-shadow: inset 0 0 0 3px #5c62ec;
+}
+
+.quote-rating {
+    display: flex;
+    justify-content: flex-end;
+    padding: 4px;
+}
+
+.pageCount {
+    font-family: "Fjalla One", sans-serif;
+    margin: 10px;
+    border: 2px solid rgb(173, 185, 255);
+    padding: 15px;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.listGroup {
+    border-radius: 8px;
+    margin: auto;
+}
+
+@media (max-width: 220px) {
+    .card-column {
+        height: 25vw;
+    }
+}
